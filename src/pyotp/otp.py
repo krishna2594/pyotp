@@ -13,7 +13,7 @@ class OTP(object):
         self,
         s: str,
         digits: int = 6,
-        digest: Any = hashlib.sha1,
+        digest: Any = hashlib.sha512,
         name: Optional[str] = None,
         issuer: Optional[str] = None
     ) -> None:
